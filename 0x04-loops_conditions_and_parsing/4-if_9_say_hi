@@ -5,10 +5,10 @@ count=0
 
 until [ $count -ge 10 ]
 do
-	if [ $count -eq 9 ]
+	if [ $count -eq 8 ]
 	then
-		echo "hi"
 		echo "Best School"
+		echo "hi"
 	else
 		echo "Best School"
 	fi
