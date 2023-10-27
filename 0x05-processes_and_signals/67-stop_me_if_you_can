@@ -2,4 +2,5 @@
 #Bash script that stops 4-to_infinity_and_beyond process.
 #Requirements:
 #    You must use kill
+
 pkill -9 -f "highlander"
