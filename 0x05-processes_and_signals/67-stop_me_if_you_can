@@ -3,4 +3,4 @@
 #Requirements:
 #    You must use kill
 
-pkill -9 -f "highlander"
+pkill -15 -f "highlander"
