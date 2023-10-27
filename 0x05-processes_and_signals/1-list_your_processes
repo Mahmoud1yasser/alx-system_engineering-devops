@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #print all list of pids including the ones with on TTY
 
-ps -e aux
+ps aux --forest
