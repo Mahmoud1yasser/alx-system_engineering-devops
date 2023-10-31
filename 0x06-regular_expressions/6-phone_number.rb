@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
 #comment
-puts ARGV[0].scan(/^[\S]?(\d{10})[\S]?$/).join
+puts ARGV[0].scan(/^\d{10}$/).join
