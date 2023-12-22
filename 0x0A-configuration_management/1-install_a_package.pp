@@ -1,11 +1,11 @@
-#install a flask from pip3
-#This puppet mainfest installs flask from pip3
+# Ensure python3-pip package is installed
 package { 'python3-pip':
-  ensure => 'installed',
+  ensure => installed,
 }
 
-exec { 'install flask':
-  command => '/usr/bin/pip3 install flask==2.1.0',
-  path    => ['/usr/bin'],
-  unless  => '/usr/bin/pip3 freeze | /bin/grep Flask | /bin/grep 2.1.0',
+# Install flask from pip3
+package { 'flask':
+  ensure   => '2.1.0',
+  provider => 'pip3',
+  require  => Package['python3-pip'],
 }
